@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="A brief page description">
+    <meta name="keywords" content="krishna,krishnaRahore,portfolio,itportfolio,dynamickrishna,kana,kanaportfolio" />
+    <meta property="og:title" content="Krishna Portfolio website" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%- title %> </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+</head>
+<body>
+<div class="wrapper">
+<!-- Include your navbar or any other common elements here -->
+<%- include('../partials/header.ejs') %>
+<%- include('../partials/main.ejs') %>
+<!-- Render the content of the page -->
+<main class="main">
+<%- body %>
+</main>
+<%- include('../partials/slider.ejs')  %>
+<%- include('../partials/footer.ejs')  %>
+</div>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="/index.js"></script>
+</body>
+</html>
